@@ -162,3 +162,8 @@ ul.CTAs a {
 .sm-animals{
     height: 50px;
 }
+
+/* Contenuto pagina loggata */
+.mt-5{
+    margin-top:10% !important;
+}
