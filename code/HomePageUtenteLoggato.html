@@ -58,11 +58,10 @@
     
             <!-- Barra Menu  -->
             <div id="content">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="container-fluid">
-    
-                        <!--Categorie-->
-                        <div class="d-flex justify-content-start">
+                <nav class="d-block navbar navbar-expand-lg navbar-light bg-light">
+                    <!-- Categorie -->
+                    <div class="row">
+                        <div class="col-4">
                             <button type="button" id="sidebarCollapse" class="btn btn-outline-light text-dark border-0">
                                 <div class="row">
                                     <div class="col-12">
@@ -76,9 +75,9 @@
                                 </div>
                             </button>
                         </div>
-    
-                        <!-- Logo sito -->
-                        <div class="d-flex justify-content-center">
+
+                        <!-- Logo -->
+                        <div class="col-4">
                             <div class="row">
                                 <div class="col-12">
                                     <img class="sm-animals rounded mx-auto d-block" src="img/logo.png">
@@ -89,10 +88,10 @@
                                 </div>
                             </div>
                         </div>
-    
+
                         <!-- Logout -->
-                        <row>
-                            <button type="button" id="sidebarCollapse" class="btn btn-outline-light text-dark border-0">
+                        <div class="col-4 d-flex justify-content-end">
+                            <button type="button" id="logout" class="btn btn-outline-light text-dark border-0">
                                 <div class="row">
                                     <div class="col-12">
                                         <a href="HomePage.html">
@@ -108,7 +107,7 @@
                                     </div>
                                 </div>
                             </button>
-                        </row>
+                        </div>
                     </div>
                 </nav>
 
@@ -116,38 +115,24 @@
         <div class="container-fluid">
             <div class="row">
                 <!-- Bottoni delle due azioni -->
-                <div class="col-md-12 col-lg-8">
+                <div class="col-md-8">
                     <div class="row mt-5">
-                        <div class="col-12 offset-md-4">
+                        <div class="col-12 offset-md-4 d-flex justify-content-center d-md-block">
                             <button type="button" class="btn btn-outline-dark mb-4 w-50 p-3">
-                                <div class="row ml-4">
-                                    <div class="col-3">
-                                        <i class="fas fa-plus"></i>
-                                    </div>
-                                    <div class="col-3">
-                                        Aggiungi animali
-                                    </div>  
-                                </div>
+                                <i class="fas fa-plus"></i> <span class="pl-4">Aggiungi animali</span>
                             </button>
                         </div>
             
-                        <div class="col-12 offset-md-4">
+                        <div class="col-12 offset-md-4 d-flex justify-content-center d-md-block">
                                 <button type="button" class="btn btn-outline-dark mb-4 w-50 p-3">
-                                    <div class="row ml-4">
-                                        <div class="col-3">
-                                            <i class="fas fa-calendar-alt"></i>
-                                        </div>
-                                        <div class="col-3">
-                                            Visualizza riepilogo
-                                        </div>  
-                                    </div>
+                                    <i class="fas fa-calendar-alt"></i> <span class="pl-4">Visualizza riepilogo</span>
                                 </button>
                             </div>
                         </div>
                     </div>
             
                     <!-- Sezione notifiche -->
-                    <div class="col-md-12 col-lg-4">
+                    <div class="col-md-4">
                         <div class="list-group w-30">
                             <div class="alert alert-warning alert-dismissible fade show" role="alert">
                                 <strong>ALP001</strong> Quota proteica troppo bassa!
