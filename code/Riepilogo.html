@@ -110,56 +110,84 @@
                         </div>
                     </div>
                 </nav>
-
-        <!-- Contenuto pagina -->
-        <div class="container-fluid">
-            <div class="row">
-                <!-- Bottoni delle due azioni -->
-                <div class="col-md-8">
-                    <div class="row mt-5">
-                        <div class="col-12 offset-md-4 d-flex justify-content-center d-md-block">
-                            <button type="button" class="btn btn-outline-dark mb-4 w-50 p-3">
-                                <i class="fas fa-plus"></i> <span class="pl-4">Aggiungi animali</span>
-                            </button>
-                        </div>
-            
-                        <div class="col-12 offset-md-4 d-flex justify-content-center d-md-block">
-                                <a href="Riepilogo.html" class="btn btn-outline-dark mb-4 w-50 p-3">
-                                    <i class="fas fa-calendar-alt"></i> <span class="pl-4">Visualizza riepilogo</span>
-                                </a>
-                            </div>
+                
+                <!-- Contenuto pagina -->
+                <div class = "container-fluid">
+                    <!-- Ritorno all'Home Page -->
+                    <div class = "row">
+                        <div class="col-12">
+                            <a href="HomePageUtenteLoggato.html" class="btn btn-outline-dark" style="margin-top:-20px;">
+                                <i class="fas fa-chevron-left"></i>
+                                Home page
+                            </a>
                         </div>
                     </div>
-            
-                    <!-- Sezione notifiche -->
-                    <div class="col-md-4">
-                        <div class="list-group w-30">
-                            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                                <strong>ALP001</strong> Quota proteica troppo bassa!
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
+                        
+                    <!-- Calendario -->
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class = "col-6 col-md-4 pl-4">
+                            <H1>
+                                <span id="months">
+                                    Mese
+                                </span>
+                                <span id="years">
+                                    2020
+                                </span>
+                            </H1>
+                        </div>
+        
+                        <div class = "col-6 col-md-4 d-flex justify-content-end pr-4">
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button id="prev-months" type="button" class="btn btn-secondary">
+                                    <i class="fas fa-arrow-left"></i>
+                                </button>
+                                <button id="next-months" type="button" class="btn btn-secondary">
+                                    <i class="fas fa-arrow-right"></i>
                                 </button>
                             </div>
-            
-                            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                                <strong>PEC002</strong> Ricordati di azzerare lo stato di produzione!
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
+                        </div>
+                        <hr class="col-8">
+                    </div>
+
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-12 col-md-8 pl-4">
+                            <div class="row d-flex align-items-center mb-4">
+                                <div class ="col-6">
+                                    <span>
+                                        <b>Prodotti consumati</b><br>
+                                        Andamento mensile dei prodotti consumati per far fronte 
+                                        alle esigenze dell'animale.
+                                    </span>
+                                </div>
+                                <div class="col-6">
+                                    <div class="progress">
+                                            <div id="progress-bar-food" class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>   
+                                </div>
                             </div>
-            
-                            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                                <strong>GAL001</strong> Quota proteica troppo bassa!
-                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
+                        </div>
+                            
+                        <div class="col-12 col-md-8 pl-4">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-6">
+                                    <span>
+                                        <b>Prodotti ottenuti</b><br>
+                                        Andamento mensile della produzione degli animali. 
+                                    </span>
+                                </div>
+                                <div class="col-6">
+                                    <div class="progress">
+                                        <div id="progress-bar-product" class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-            
+    </div>
+
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Popper.JS -->
@@ -168,6 +196,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <!-- jQuery Custom Scroller CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <!-- JavaScript Riepilogo-->
+    <script src="js/Riepilogo.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function () {

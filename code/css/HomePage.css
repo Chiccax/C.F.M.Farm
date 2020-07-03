@@ -176,3 +176,8 @@ ul.CTAs a {
 button#sidebarCollapse, button#logout {
     min-width: 100px;
 }
+
+/* Progress bar */
+.progress-bar, .progress {
+    height: 30px !important;
+}
