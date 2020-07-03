@@ -22,18 +22,6 @@
 <body>
     <div class="wrapper">
 
-        <!-- quando qualcosa non si può fare compare-->
-        <div id="alert-errore" class="m-3 p-4 alert alert-danger">
-            <div class="row">
-                <div class="col-11">
-                    <strong>Attenzione</strong> Operazione non consentita. Non è ancora il momento di aggiornare!
-                </div>
-                <div class="col-1">
-                   <button id="nascondi-alert" class="bnt border-0 bg-danger rounded-pill text-light">Chiudi</button>
-                </div>
-            </div>
-        </div>
-
         <!-- Sidebar  -->
         <nav id="sidebar">
                 <div id="dismiss">
@@ -46,23 +34,23 @@
     
                 <ul class="list-unstyled components">
                     <li>
-                        <a href="#">
+                        <a href="CategoriaAlpaca.html">
                             <img class="sm-animals pl-4 pr-4" src="img/categorie/alpaca.png">
                             Alpaca
                         </a>
-                        <a href="#">
+                        <a href="CategoriaGalline.html">
                             <img class="sm-animals pl-4 pr-4" src="img/categorie/galline.png">
                             Galline
                         </a>
-                        <a href="#">
+                        <a href="CategoriaNonPresente.html">
                             <img class="sm-animals pl-4 pr-4" src="img/categorie/mucche.png">
                             Mucche
                         </a>
-                        <a href="#">
+                        <a href="CategoriaNonPresente.html">
                             <img class="sm-animals pl-4 pr-4" src="img/categorie/pecore.png">
                             Pecore
                         </a>
-                        <a href="#">
+                        <a href="CategoriaNonPresente.html">
                             <img class="sm-animals pl-4 pr-4" src="img/categorie/suini.png">
                             Suini
                         </a>
@@ -126,12 +114,22 @@
                 </nav>
 
                 <!-- contenuto pagina -->
-                
+                <div class = "col-12">
+                    <div class = row>
+                        <div class = "mt-2 col-4">
+                            <a href="HomePageUtenteLoggato.html" class="btn btn-outline-dark" style="margin-top:-20px;">
+                                <i class="fas fa-chevron-left"></i>
+                                Home page
+                            </a>
+                        </div>
+                    
+                    </div>
+                </div>
                 <div class="text-center">
-                    <img class="w-25" src="img/warning.png" alt="imagine warning"/>
+                    <img class="w-20 mt-4 mb-4" src="img/error-page.png" alt="imagine warning"/>
                 </div>
   
-                <h1 class="text-center">Ops, non hai ancora inserito nessun animale.</h1>
+                <h1 class="text-center mt-4">Ops, non hai ancora inserito nessun animale.</h1>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

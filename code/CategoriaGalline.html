@@ -22,18 +22,6 @@
 <body>
     <div class="wrapper">
 
-        <!-- quando qualcosa non si può fare compare-->
-        <div id="alert-errore" class="m-3 p-4 alert alert-danger">
-            <div class="row">
-                <div class="col-11">
-                    <strong>Attenzione</strong> Operazione non consentita. Non è ancora il momento di aggiornare!
-                </div>
-                <div class="col-1">
-                   <button id="nascondi-alert" class="bnt border-0 bg-danger rounded-pill text-light">Chiudi</button>
-                </div>
-            </div>
-        </div>
-
         <!-- Sidebar  -->
         <nav id="sidebar">
                 <div id="dismiss">
@@ -46,23 +34,23 @@
     
                 <ul class="list-unstyled components">
                     <li>
-                        <a href="#">
+                        <a href="CategoriaAlpaca.html">
                             <img class="sm-animals pl-4 pr-4" src="img/categorie/alpaca.png">
                             Alpaca
                         </a>
-                        <a href="#">
+                        <a href="CategoriaGalline.html">
                             <img class="sm-animals pl-4 pr-4" src="img/categorie/galline.png">
                             Galline
                         </a>
-                        <a href="#">
+                        <a href="CategoriaNonPresente.html">
                             <img class="sm-animals pl-4 pr-4" src="img/categorie/mucche.png">
                             Mucche
                         </a>
-                        <a href="#">
+                        <a href="CategoriaNonPresente.html">
                             <img class="sm-animals pl-4 pr-4" src="img/categorie/pecore.png">
                             Pecore
                         </a>
-                        <a href="#">
+                        <a href="CategoriaNonPresente.html">
                             <img class="sm-animals pl-4 pr-4" src="img/categorie/suini.png">
                             Suini
                         </a>
@@ -126,50 +114,46 @@
                 </nav>
 
                 <!-- contenuto pagina -->
-                <div class= "container">
+                <div class= "container-fluid">
                     <div class= "row">
                         
                         <!-- titolo categoria -->
                         <div class = "col-12">
                             <div class = row>
-                                <div class = "col-4">
-                                    <!-- inserimento pulsante per ritorno alla home page-->
+                                <div class = "mt-2 col-4">
+                                    <a href="HomePageUtenteLoggato.html" class="btn btn-outline-dark" style="margin-top:-20px;">
+                                        <i class="fas fa-chevron-left"></i>
+                                        Home page
+                                    </a>
                                 </div>
 
                                 <div class = "col-4">
-                                    <h3 class="text-center mb-4">Galline</h5>
+                                    <h3 class="text-center mb-4"><b>Galline</b></h3>
                                 </div>
 
-                                <!-- barra di ricerca -->
                                 <div class = "col-4">
-                                    <form class="form-inline">
-                                        <div class="input-group">
-                                          <div class="input-group-prepend">
-                                            <span class="input-group-text" id="basic-addon1">@</span>
-                                          </div>
-                                          <input type="text" class="form-control" placeholder="Ricerca per id" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                      </form>
+                                    <!-- form di ricerca -->
                                 </div>
                             
                             </div>
                         </div>
 
-                        <!-- prima riga -->
-                        <!-- cards nella prima colonna-->
-                        <div id="card-1" class = "col-xl-4 col-lg-6">
+                        <!-- prima card -->
+                        <div id="card-1" class = "col-sm-12 col-md-12 col-lg-6 col-xl-6  mb-4">
                             <div class="row">
 
-                                <div class ="col-4 mb-4">
+                                <div class="col-1"></div>
+
+                                <div class ="col-3 mb-4">
                                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#generale-1" role="tab" aria-controls="v-pills-home" aria-selected="true">Generale</a>
-                                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#qualita-cibo-1" role="tab" aria-controls="v-pills-profile" aria-selected="false">Qualità cibo</a>
-                                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#quantita-cibo-1" role="tab" aria-controls="v-pills-messages" aria-selected="false">Quantità cibo</a>
-                                        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#prodotti-1" role="tab" aria-controls="v-pills-settings" aria-selected="false">Prodotti</a>
+                                        <a class="btn btn-outline-secondary border-top-0 border-left-0 border-right-0 nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#generale-1" role="tab" aria-controls="v-pills-home" aria-selected="true">Generale</a>
+                                        <a class="btn btn-outline-secondary border-top-0 border-left-0 border-right-0 nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#qualita-cibo-1" role="tab" aria-controls="v-pills-profile" aria-selected="false">Qualità cibo</a>
+                                        <a class="btn btn-outline-secondary border-top-0 border-left-0 border-right-0 nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#quantita-cibo-1" role="tab" aria-controls="v-pills-messages" aria-selected="false">Quantità cibo</a>
+                                        <a class="btn btn-outline-secondary border-top-0 border-left-0 border-right-0 nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#prodotti-1" role="tab" aria-controls="v-pills-settings" aria-selected="false">Prodotti</a>
                                     </div>
                                 </div>
                                 
-                                <div id = "card-1" class ="col-8 mb-4 border border-success">
+                                <div id = "card-1" class ="col-6 mb-4 border border-success" style="height: 338px;">
                                     <div class="tab-content" id="v-pills-tabContent">
 
                                         <!-- GENERALE, prima card -->
@@ -196,7 +180,7 @@
                                                         <div id="azzera-bar-fame" class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                                       </div>
                                                 </div>
-                                                <div class = "col-3">
+                                                <div class = "mb-4 col-3">
                                                     <button id = "azzera-fame" class="button border-0 bg-white">
                                                         <i class="fa fa-retweet" aria-hidden="true"></i>
                                                     </button>
@@ -204,7 +188,7 @@
 
 
                                                 <!-- colonne per lo stato di produzione: barra e icona -->
-                                                <div class = "col-12">
+                                                <div class = "mt-4 col-12">
                                                     <p class="font-weight-light text-dark">Stato di produzione:</p>
                                                 </div>
 
@@ -214,8 +198,8 @@
                                                       </div>
                                                 </div>
                                                 <div class = "col-3">
-                                                    <button id = "mostra-alert" class="button border-0 bg-white">
-                                                        <i class="fa fa-retweet" aria-hidden="true"></i>
+                                                    <button class="button border-0 bg-white">
+                                                        <i class="fa fa-retweet text-muted" aria-hidden="true"></i>
                                                     </button>
                                                 </div>
 
@@ -290,12 +274,9 @@
                                                     <p class="font-weight-light text-dark text-center ">Attualmente G001 ha prodotto:</p>
                                                 </div>
 
-                                                <div class="col-2">
-                                                    <img src="img/produzione/uova.png" alt="img uova">
-                                                </div>
-
-                                                <div class="col-10">
-                                                    <p class="font-weight-light text-center text-dark">Uova</p>
+                                                <div class="col-12">
+                                                    <p class="font-weight-light text-center text-dark">
+                                                        <img class="mr-4" src="img/produzione/uova.png" alt="img uova">Uova</p>
                                                 </div>
 
                                                 <div class = "col-12">
@@ -304,7 +285,7 @@
 
                                                 <div class = "col-12">
                                                     <div class="mb-4 progress progress-color">
-                                                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                                       </div>
                                                 </div>
                                             </div>
@@ -313,23 +294,27 @@
                                     </div>
                                 </div>
 
+                                <div class="col-2"></div>
+
                             </div>
                         </div>
 
-                        <!-- cards nella seconda colonna-->
-                        <div id="card-2" class = "col-xl-4 col-lg-6 mb-4">
+                        <!-- seconda card -->
+                        <div id="card-2" class = "col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-4">
                             <div class="row">
 
-                                <div class ="col-4 mb-4">
+                                <div class="col-1"></div>
+
+                                <div class ="col-3 mb-4">
                                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#generale-2" role="tab" aria-controls="v-pills-home" aria-selected="true">Generale</a>
-                                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#qualita-cibo-2" role="tab" aria-controls="v-pills-profile" aria-selected="false">Qualità cibo</a>
-                                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#quantita-cibo-2" role="tab" aria-controls="v-pills-messages" aria-selected="false">Quantità cibo</a>
-                                        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#prodotti-2" role="tab" aria-controls="v-pills-settings" aria-selected="false">Prodotti</a>
+                                        <a class="btn btn-outline-secondary border-top-0 border-left-0 border-right-0 nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#generale-2" role="tab" aria-controls="v-pills-home" aria-selected="true">Generale</a>
+                                        <a class="btn btn-outline-secondary border-top-0 border-left-0 border-right-0 nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#qualita-cibo-2" role="tab" aria-controls="v-pills-profile" aria-selected="false">Qualità cibo</a>
+                                        <a class="btn btn-outline-secondary border-top-0 border-left-0 border-right-0 nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#quantita-cibo-2" role="tab" aria-controls="v-pills-messages" aria-selected="false">Quantità cibo</a>
+                                        <a class="btn btn-outline-secondary border-top-0 border-left-0 border-right-0 nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#prodotti-2" role="tab" aria-controls="v-pills-settings" aria-selected="false">Prodotti</a>
                                     </div>
                                 </div>
 
-                                <div class ="col-8 mb-4 border border-success">
+                                <div class ="col-6 mb-4 border border-success" style="height: 338px;">
                                     <div class="tab-content" id="v-pills-tabContent">
 
                                         <!-- GENERALE, seconda card -->
@@ -355,15 +340,15 @@
                                                         <div class="progress-bar bg-success" role="progressbar" style="width: 35%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                                       </div>
                                                 </div>
-                                                <div class = "col-3">
-                                                    <button id = "mostra-alert-1" class="button border-0 bg-white">
-                                                        <i class="fa fa-retweet" aria-hidden="true"></i>
+                                                <div class = "mb-4 col-3">
+                                                    <button class="button border-0 bg-white">
+                                                        <i class="fa fa-retweet text-muted" aria-hidden="true"></i>
                                                     </button>
                                                 </div>
 
 
                                                 <!-- colonne per lo stato di produzione: barra e icona -->
-                                                <div class = "col-12">
+                                                <div class = "mt-4 col-12">
                                                     <p class="font-weight-light text-dark">Stato di produzione:</p>
                                                 </div>
 
@@ -448,12 +433,9 @@
                                                     <p class="font-weight-light text-dark text-center ">Attualmente G002 ha prodotto:</p>
                                                 </div>
 
-                                                <div class="col-2">
-                                                    <img src="img/produzione/uova.png" alt="img uova">
-                                                </div>
-
-                                                <div class="col-10">
-                                                    <p class="font-weight-light text-center text-dark">Uova</p>
+                                                <div class="col-12">
+                                                    <p class="font-weight-light text-center text-dark">
+                                                        <img class="mr-4" src="img/produzione/uova.png" alt="img uova">Uova</p>
                                                 </div>
 
                                                 <div class = "col-12">
@@ -462,7 +444,7 @@
 
                                                 <div class = "col-12">
                                                     <div class="mb-4 progress progress-color">
-                                                        <div id = "azzera-bar-produzione" class="progress-bar bg-danger" role="progressbar" style="width: 94%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        <div id = "azzera-bar-produzione-prod" class="progress-bar bg-danger" role="progressbar" style="width: 94%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                                       </div>
                                                 </div>
                                             </div>
@@ -470,23 +452,27 @@
                                     </div>
                                 </div>
 
+                                <div class="col-2"></div>
+
                             </div>
                         </div>
 
-                        <!-- cards nella terza colonna-->
-                        <div id ="card-3" class = "col-xl-4 col-lg-6 mb-4">
+                        <!-- terza card -->
+                        <div id ="card-3" class = "col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-4">
                             <div class="row">
 
-                                <div class ="col-4 mb-4">
+                                <div class="col-1"></div>
+
+                                <div class ="col-3 mb-4">
                                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#generale-3" role="tab" aria-controls="v-pills-home" aria-selected="true">Generale</a>
-                                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#qualita-cibo-3" role="tab" aria-controls="v-pills-profile" aria-selected="false">Qualità cibo</a>
-                                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#quantita-cibo-3" role="tab" aria-controls="v-pills-messages" aria-selected="false">Quantità cibo</a>
-                                        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#prodotti-3" role="tab" aria-controls="v-pills-settings" aria-selected="false">Prodotti</a>
+                                        <a class="btn btn-outline-secondary border-top-0 border-left-0 border-right-0 nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#generale-3" role="tab" aria-controls="v-pills-home" aria-selected="true">Generale</a>
+                                        <a class="btn btn-outline-secondary border-top-0 border-left-0 border-right-0 nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#qualita-cibo-3" role="tab" aria-controls="v-pills-profile" aria-selected="false">Qualità cibo</a>
+                                        <a class="btn btn-outline-secondary border-top-0 border-left-0 border-right-0 nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#quantita-cibo-3" role="tab" aria-controls="v-pills-messages" aria-selected="false">Quantità cibo</a>
+                                        <a class="btn btn-outline-secondary border-top-0 border-left-0 border-right-0 nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#prodotti-3" role="tab" aria-controls="v-pills-settings" aria-selected="false">Prodotti</a>
                                     </div>
                                 </div>
 
-                                <div class ="col-8 mb-4 border border-success">
+                                <div class ="col-6 mb-4 border border-success" style="height: 338px;">
                                     <div class="tab-content" id="v-pills-tabContent">
 
                                         <!-- GENERALE, terza card -->
@@ -513,14 +499,14 @@
                                                         <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                                       </div>
                                                 </div>
-                                                <div class = "col-3">
-                                                    <button id = "mostra-alert-2" class="button border-0 bg-white">
-                                                        <i class="fa fa-retweet" aria-hidden="true"></i>
+                                                <div class = "mb-4 col-3">
+                                                    <button class="button border-0 bg-white">
+                                                        <i class="fa fa-retweet text-muted" aria-hidden="true"></i>
                                                     </button>
                                                 </div>
 
                                                 <!-- colonne per lo stato di produzione: barra e icona -->
-                                                <div class = "col-12">
+                                                <div class = "mt-4 col-12">
                                                     <p class="font-weight-light text-dark">Stato di produzione:</p>
                                                 </div>
                                                 <div class = "col-9">
@@ -529,8 +515,8 @@
                                                       </div>
                                                 </div>
                                                 <div class = "col-3">
-                                                    <button id = "mostra-alert-3" class="button border-0 bg-white">
-                                                        <i class="fa fa-retweet" aria-hidden="true"></i>
+                                                    <button class="button border-0 bg-white">
+                                                        <i class="fa fa-retweet text-muted" aria-hidden="true"></i>
                                                     </button>
                                                 </div>
 
@@ -605,12 +591,9 @@
                                                     <p class="font-weight-light text-dark text-center ">Attualmente G003 ha prodotto:</p>
                                                 </div>
 
-                                                <div class="col-2">
-                                                    <img src="img/produzione/uova.png" alt="img uova">
-                                                </div>
-
-                                                <div class="col-10">
-                                                    <p class="font-weight-light text-center text-dark">Uova</p>
+                                                <div class="col-12">
+                                                    <p class="font-weight-light text-center text-dark">
+                                                        <img class="mr-4" src="img/produzione/uova.png" alt="img uova">Uova</p>
                                                 </div>
 
                                                 <div class = "col-12">
@@ -628,25 +611,27 @@
                                     </div>
                                 </div>
 
+                                <div class="col-2"></div>
+
                             </div>
                         </div>
 
-                        <!-- seconda riga -->
-                        
-                        <!-- cards nella prima colonna-->
-                        <div id="card-4" class = "col-xl-4 col-lg-6">
+                        <!-- quarta card -->
+                        <div id="card-4" class = "col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-4">
                             <div class="row">
 
-                                <div class ="col-4 mb-4">
+                                <div class="col-1"></div>
+
+                                <div class ="col-3 mb-4">
                                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#generale-4" role="tab" aria-controls="v-pills-home" aria-selected="true">Generale</a>
-                                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#qualita-cibo-4" role="tab" aria-controls="v-pills-profile" aria-selected="false">Qualità cibo</a>
-                                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#quantita-cibo-4" role="tab" aria-controls="v-pills-messages" aria-selected="false">Quantità cibo</a>
-                                        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#prodotti-4" role="tab" aria-controls="v-pills-settings" aria-selected="false">Prodotti</a>
+                                        <a class="btn btn-outline-secondary border-top-0 border-left-0 border-right-0 nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#generale-4" role="tab" aria-controls="v-pills-home" aria-selected="true">Generale</a>
+                                        <a class="btn btn-outline-secondary border-top-0 border-left-0 border-right-0 nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#qualita-cibo-4" role="tab" aria-controls="v-pills-profile" aria-selected="false">Qualità cibo</a>
+                                        <a class="btn btn-outline-secondary border-top-0 border-left-0 border-right-0 nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#quantita-cibo-4" role="tab" aria-controls="v-pills-messages" aria-selected="false">Quantità cibo</a>
+                                        <a class="btn btn-outline-secondary border-top-0 border-left-0 border-right-0 nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#prodotti-4" role="tab" aria-controls="v-pills-settings" aria-selected="false">Prodotti</a>
                                     </div>
                                 </div>
                                 
-                                <div id = "card-1" class ="col-8 mb-4 border border-success">
+                                <div id = "card-1" class ="col-6 mb-4 border border-success" style="height: 338px;">
                                     <div class="tab-content" id="v-pills-tabContent">
 
                                         <!-- GENERALE, quarta card -->
@@ -673,7 +658,7 @@
                                                         <div id="azzera-bar-fame-4" class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                                       </div>
                                                 </div>
-                                                <div class = "col-3">
+                                                <div class = "mb-4 col-3">
                                                     <button id = "azzera-fame-4" class="button border-0 bg-white">
                                                         <i class="fa fa-retweet" aria-hidden="true"></i>
                                                     </button>
@@ -681,7 +666,7 @@
 
 
                                                 <!-- colonne per lo stato di produzione: barra e icona -->
-                                                <div class = "col-12">
+                                                <div class = "mt-4 col-12">
                                                     <p class="font-weight-light text-dark">Stato di produzione:</p>
                                                 </div>
 
@@ -691,8 +676,8 @@
                                                       </div>
                                                 </div>
                                                 <div class = "col-3">
-                                                    <button id = "mostra-alert-4" class="button border-0 bg-white">
-                                                        <i class="fa fa-retweet" aria-hidden="true"></i>
+                                                    <button class="button border-0 bg-white">
+                                                        <i class="fa fa-retweet text-muted" aria-hidden="true"></i>
                                                     </button>
                                                 </div>
 
@@ -767,12 +752,9 @@
                                                     <p class="font-weight-light text-dark text-center ">Attualmente G004 ha prodotto:</p>
                                                 </div>
 
-                                                <div class="col-2">
-                                                    <img src="img/produzione/uova.png" alt="img uova">
-                                                </div>
-
-                                                <div class="col-10">
-                                                    <p class="font-weight-light text-center text-dark">Uova</p>
+                                                <div class="col-12">
+                                                    <p class="font-weight-light text-center text-dark">
+                                                        <img class="mr-4" src="img/produzione/uova.png" alt="img uova">Uova</p>
                                                 </div>
 
                                                 <div class = "col-12">
@@ -781,7 +763,7 @@
 
                                                 <div class = "col-12">
                                                     <div class="mb-4 progress progress-color">
-                                                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                                       </div>
                                                 </div>
                                             </div>
@@ -790,23 +772,27 @@
                                     </div>
                                 </div>
 
+                                <div class="col-2"></div>
+
                             </div>
                         </div>
 
-                        <!-- cards nella seconda colonna-->
-                        <div id="card-5" class = "col-xl-4 col-lg-6 mb-4">
+                        <!-- quinta card -->
+                        <div id="card-5" class = "col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-4">
                             <div class="row">
 
-                                <div class ="col-4 mb-4">
+                                <div class="col-1"></div>
+
+                                <div class ="col-3 mb-4">
                                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#generale-5" role="tab" aria-controls="v-pills-home" aria-selected="true">Generale</a>
-                                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#qualita-cibo-5" role="tab" aria-controls="v-pills-profile" aria-selected="false">Qualità cibo</a>
-                                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#quantita-cibo-5" role="tab" aria-controls="v-pills-messages" aria-selected="false">Quantità cibo</a>
-                                        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#prodotti-5" role="tab" aria-controls="v-pills-settings" aria-selected="false">Prodotti</a>
+                                        <a class="btn btn-outline-secondary border-top-0 border-left-0 border-right-0 nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#generale-5" role="tab" aria-controls="v-pills-home" aria-selected="true">Generale</a>
+                                        <a class="btn btn-outline-secondary border-top-0 border-left-0 border-right-0 nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#qualita-cibo-5" role="tab" aria-controls="v-pills-profile" aria-selected="false">Qualità cibo</a>
+                                        <a class="btn btn-outline-secondary border-top-0 border-left-0 border-right-0 nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#quantita-cibo-5" role="tab" aria-controls="v-pills-messages" aria-selected="false">Quantità cibo</a>
+                                        <a class="btn btn-outline-secondary border-top-0 border-left-0 border-right-0 nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#prodotti-5" role="tab" aria-controls="v-pills-settings" aria-selected="false">Prodotti</a>
                                     </div>
                                 </div>
 
-                                <div class ="col-8 mb-4 border border-success">
+                                <div class ="col-6 mb-4 border border-success" style="height: 338px;">
                                     <div class="tab-content" id="v-pills-tabContent">
 
                                         <!-- GENERALE, seconda card -->
@@ -832,15 +818,15 @@
                                                         <div class="progress-bar bg-success" role="progressbar" style="width: 35%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                                       </div>
                                                 </div>
-                                                <div class = "col-3">
-                                                    <button id = "mostra-alert-5" class="button border-0 bg-white">
-                                                        <i class="fa fa-retweet" aria-hidden="true"></i>
+                                                <div class = "mb-4 col-3">
+                                                    <button  class="button border-0 bg-white">
+                                                        <i class="fa fa-retweet text-muted" aria-hidden="true"></i>
                                                     </button>
                                                 </div>
 
 
                                                 <!-- colonne per lo stato di produzione: barra e icona -->
-                                                <div class = "col-12">
+                                                <div class = "mt-4 col-12">
                                                     <p class="font-weight-light text-dark">Stato di produzione:</p>
                                                 </div>
 
@@ -925,12 +911,9 @@
                                                     <p class="font-weight-light text-dark text-center ">Attualmente G005 ha prodotto:</p>
                                                 </div>
 
-                                                <div class="col-2">
-                                                    <img src="img/produzione/uova.png" alt="img uova">
-                                                </div>
-
-                                                <div class="col-10">
-                                                    <p class="font-weight-light text-center text-dark">Uova</p>
+                                                <div class="col-12">
+                                                    <p class="font-weight-light text-center text-dark">
+                                                        <img class="mr-4" src="img/produzione/uova.png" alt="img uova">Uova</p>
                                                 </div>
 
                                                 <div class = "col-12">
@@ -939,7 +922,7 @@
 
                                                 <div class = "col-12">
                                                     <div class="mb-4 progress progress-color">
-                                                        <div id = "azzera-bar-produzione" class="progress-bar bg-danger" role="progressbar" style="width: 94%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        <div id = "azzera-bar-produzione-5-prod" class="progress-bar bg-danger" role="progressbar" style="width: 94%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                                       </div>
                                                 </div>
                                             </div>
@@ -947,23 +930,27 @@
                                     </div>
                                 </div>
 
+                                <div class="col-2"></div>
+
                             </div>
                         </div>
 
-                        <!-- cards nella terza colonna-->
-                        <div id ="card-6" class = "col-xl-4 col-lg-6 mb-4">
+                        <!-- sesta card -->
+                        <div id ="card-6" class = "col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-4">
                             <div class="row">
 
-                                <div class ="col-4 mb-4">
+                                <div class="col-1"></div>
+
+                                <div class ="col-3 mb-4">
                                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#generale-6" role="tab" aria-controls="v-pills-home" aria-selected="true">Generale</a>
-                                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#qualita-cibo-6" role="tab" aria-controls="v-pills-profile" aria-selected="false">Qualità cibo</a>
-                                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#quantita-cibo-6" role="tab" aria-controls="v-pills-messages" aria-selected="false">Quantità cibo</a>
-                                        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#prodotti-6" role="tab" aria-controls="v-pills-settings" aria-selected="false">Prodotti</a>
+                                        <a class="btn btn-outline-secondary border-top-0 border-left-0 border-right-0 nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#generale-6" role="tab" aria-controls="v-pills-home" aria-selected="true">Generale</a>
+                                        <a class="btn btn-outline-secondary border-top-0 border-left-0 border-right-0 nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#qualita-cibo-6" role="tab" aria-controls="v-pills-profile" aria-selected="false">Qualità cibo</a>
+                                        <a class="btn btn-outline-secondary border-top-0 border-left-0 border-right-0 nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#quantita-cibo-6" role="tab" aria-controls="v-pills-messages" aria-selected="false">Quantità cibo</a>
+                                        <a class="btn btn-outline-secondary border-top-0 border-left-0 border-right-0 nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#prodotti-6" role="tab" aria-controls="v-pills-settings" aria-selected="false">Prodotti</a>
                                     </div>
                                 </div>
 
-                                <div class ="col-8 mb-4 border border-success">
+                                <div class ="col-6 mb-4 border border-success" style="height: 338px;">
                                     <div class="tab-content" id="v-pills-tabContent">
 
                                         <!-- GENERALE, terza card -->
@@ -990,14 +977,14 @@
                                                         <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                                       </div>
                                                 </div>
-                                                <div class = "col-3">
-                                                    <button id = "mostra-alert-6" class="button border-0 bg-white">
-                                                        <i class="fa fa-retweet" aria-hidden="true"></i>
+                                                <div class = "mb-4 col-3">
+                                                    <button class="button border-0 bg-white">
+                                                        <i class="fa fa-retweet text-muted" aria-hidden="true"></i>
                                                     </button>
                                                 </div>
 
                                                 <!-- colonne per lo stato di produzione: barra e icona -->
-                                                <div class = "col-12">
+                                                <div class = "mt-4 col-12">
                                                     <p class="font-weight-light text-dark">Stato di produzione:</p>
                                                 </div>
                                                 <div class = "col-9">
@@ -1006,8 +993,8 @@
                                                       </div>
                                                 </div>
                                                 <div class = "col-3">
-                                                    <button id = "mostra-alert-7" class="button border-0 bg-white">
-                                                        <i class="fa fa-retweet" aria-hidden="true"></i>
+                                                    <button class="button border-0 bg-white">
+                                                        <i class="fa fa-retweet text-muted" aria-hidden="true"></i>
                                                     </button>
                                                 </div>
 
@@ -1082,12 +1069,9 @@
                                                     <p class="font-weight-light text-dark text-center ">Attualmente G006 ha prodotto:</p>
                                                 </div>
 
-                                                <div class="col-2">
-                                                    <img src="img/produzione/uova.png" alt="img uova">
-                                                </div>
-
-                                                <div class="col-10">
-                                                    <p class="font-weight-light text-center text-dark">Uova</p>
+                                                <div class="col-12">
+                                                    <p class="font-weight-light text-center text-dark">
+                                                        <img class="mr-4" src="img/produzione/uova.png" alt="img uova">Uova</p>
                                                 </div>
 
                                                 <div class = "col-12">
@@ -1105,10 +1089,10 @@
                                     </div>
                                 </div>
 
+                                <div class="col-2"></div>
+
                             </div>
                         </div>
- 
-
                     </div>
 
                     <!-- Modal per l'eliminazione del primo elemento -->
@@ -1271,10 +1255,14 @@
             });
             /*azzera la produzione della seconda card*/
             $('#azzera-produzione').on('click', function () {
-                var change = document.getElementById("azzera-bar-produzione");
-                change.style="width: 0%;";
+                var change1 = document.getElementById("azzera-bar-produzione");
+                var change2 = document.getElementById("azzera-bar-produzione-prod");
+                change1.style="width: 0%;";
+                change2.style="width: 0%;";
                 $('#azzera-bar-produzione').removeClass('bg-danger');
                 $('#azzera-bar-produzione').addClass('bg-success');
+                $('#azzera-bar-produzione-prod').removeClass('bg-danger');
+                $('#azzera-bar-produzione-prod').addClass('bg-success');
             });
             /*azzera la fame della quarta card*/
             $('#azzera-fame-4').on('click', function () {
@@ -1286,10 +1274,14 @@
 
             /*azzera la produzione della quinta card*/
             $('#azzera-produzione-5').on('click', function () {
-                var change = document.getElementById("azzera-bar-produzione-5");
-                change.style="width: 0%;";
+                var change1 = document.getElementById("azzera-bar-produzione-5");
+                var change2 = document.getElementById("azzera-bar-produzione-5-prod");
+                change1.style="width: 0%;";
+                change2.style="width: 0%;";
                 $('#azzera-bar-produzione-5').removeClass('bg-danger');
                 $('#azzera-bar-produzione-5').addClass('bg-success');
+                $('#azzera-bar-produzione-5-prod').removeClass('bg-danger');
+                $('#azzera-bar-produzione-5-prod').addClass('bg-success');
             });
 
             /*eliminazione delle cards*/
@@ -1310,38 +1302,7 @@
             });
             $('#trush-6').on('click', function () {
                 document.getElementById("card-6").remove();
-            });
-
-            /*mostra alert e nascondi alert*/
-            $('#mostra-alert').on('click', function () {
-                document.getElementById("alert-errore").style.visibility = "visible";
-            });
-            $('#mostra-alert-1').on('click', function () {
-                document.getElementById("alert-errore").style.visibility = "visible";
-            });
-            $('#mostra-alert-2').on('click', function () {
-                document.getElementById("alert-errore").style.visibility = "visible";
-            });
-            $('#mostra-alert-3').on('click', function () {
-                document.getElementById("alert-errore").style.visibility = "visible";
-            });
-            $('#mostra-alert-4').on('click', function () {
-                document.getElementById("alert-errore").style.visibility = "visible";
-            });
-            $('#mostra-alert-5').on('click', function () {
-                document.getElementById("alert-errore").style.visibility = "visible";
-            });
-            $('#mostra-alert-6').on('click', function () {
-                document.getElementById("alert-errore").style.visibility = "visible";
-            });
-            $('#mostra-alert-7').on('click', function () {
-                document.getElementById("alert-errore").style.visibility = "visible";
-            });
-            $('#nascondi-alert').on('click', function () {
-                document.getElementById("alert-errore").style.visibility = "hidden";
-            });
-
-           
+            });          
             
         });
     </script>

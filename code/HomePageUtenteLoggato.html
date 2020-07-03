@@ -9,12 +9,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="css/HomePage.css">
+    <!-- external CSS buttons-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    
+
 
 </head>
 
@@ -32,23 +36,23 @@
     
                 <ul class="list-unstyled components">
                     <li>
-                        <a href="#">
+                        <a href="CategoriaAlpaca.html">
                             <img class="sm-animals pl-4 pr-4" src="img/categorie/alpaca.png">
                             Alpaca
                         </a>
-                        <a href="#">
+                        <a href="CategoriaGalline.html">
                             <img class="sm-animals pl-4 pr-4" src="img/categorie/galline.png">
                             Galline
                         </a>
-                        <a href="#">
+                        <a href="CategoriaNonPresente.html">
                             <img class="sm-animals pl-4 pr-4" src="img/categorie/mucche.png">
                             Mucche
                         </a>
-                        <a href="#">
+                        <a href="CategoriaNonPresente.html">
                             <img class="sm-animals pl-4 pr-4" src="img/categorie/pecore.png">
                             Pecore
                         </a>
-                        <a href="#">
+                        <a href="CategoriaNonPresente.html">
                             <img class="sm-animals pl-4 pr-4" src="img/categorie/suini.png">
                             Suini
                         </a>
@@ -118,15 +122,21 @@
                 <div class="col-md-8">
                     <div class="row mt-5">
                         <div class="col-12 offset-md-4 d-flex justify-content-center d-md-block">
-                            <button type="button" class="btn btn-outline-dark mb-4 w-50 p-3">
-                                <i class="fas fa-plus"></i> <span class="pl-4">Aggiungi animali</span>
-                            </button>
+                            <a class="button mb-4 w-50 p-3" href="AggiungiAnimali.html" role="button">
+                                <span class="font-weight-light" id="responsive-button">Aggiungi animali</span>
+                                <div class="icon">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </a>
                         </div>
             
                         <div class="col-12 offset-md-4 d-flex justify-content-center d-md-block">
-                                <a href="Riepilogo.html" class="btn btn-outline-dark mb-4 w-50 p-3">
-                                    <i class="fas fa-calendar-alt"></i> <span class="pl-4">Visualizza riepilogo</span>
-                                </a>
+                            <a class="button mb-4 w-50 p-3" href="Riepilogo.html" role="button">
+                                <span class="font-weight-light" id="responsive-button">Visualizza riepilogo</span>
+                                <div class="icon">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </div>
+                            </a>
                             </div>
                         </div>
                     </div>
@@ -134,26 +144,60 @@
                     <!-- Sezione notifiche -->
                     <div class="col-md-4">
                         <div class="list-group w-30">
-                            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                                <strong>ALP001</strong> Quota proteica troppo bassa!
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-            
-                            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                                <strong>PEC002</strong> Ricordati di azzerare lo stato di produzione!
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-            
-                            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                                <strong>GAL001</strong> Quota proteica troppo bassa!
+                            <a href="CategoriaAlpaca.html">
+                                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                    <strong>A001</strong> L'animale ha bisogno di cibo.
                                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
-                            </div>
+                                </div>
+                            </a>
+            
+                            <a href="CategoriaAlpaca.html">
+                                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                    <strong>A002</strong> Ricordati di azzerare lo stato di produzione!
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                            </a>
+
+                            <a href="CategoriaGalline.html">
+                                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                    <strong>G001</strong> L'animale ha bisogno di cibo.
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                </div>
+                            </a>
+
+                            <a href="CategoriaGalline.html">
+                                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                    <strong>G002</strong> Ricordati di azzerare lo stato di produzione!
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                </div>
+                            </a>
+
+                            <a href="CategoriaGalline.html">
+                                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                    <strong>G004</strong> L'animale ha bisogno di cibo.
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                </div>
+                            </a>
+
+                            <a href="CategoriaGalline.html">
+                                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                    <strong>G005</strong> Ricordati di azzerare lo stato di produzione!
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                </div>
+                            </a>
+
                         </div>
                     </div>
                 </div>
@@ -187,6 +231,8 @@
                 $('a[aria-expanded=true]').attr('aria-expanded', 'false');
             });
         });
+
     </script>
+
 </body>
 </html>
