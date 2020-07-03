@@ -1,0 +1,15 @@
+/*Cambio colore dei pulsanti*/
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #77dd77 !important;
+}
+
+/*cambio colore del cestino*/
+.color-trash-red{
+    color:red;
+}
+
+.alert{
+    z-index: 1 !important;
+    visibility: hidden;
+}
