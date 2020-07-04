@@ -11,11 +11,9 @@
     <link rel="stylesheet" href="css/HomePage.css">
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
@@ -112,46 +110,125 @@
                 </nav>
 
                 <!-- contenuto pagina -->
-                <div class = "container">
+                <div class = "container-fluid">
+                    <!--pulsante torna all'home page-->
                     <div class = "row">
-
-                        <!-- prima parte: inserimento -->
-                        <div class = "col-8">
-                            <!-- inserire form per l'inserimento-->
-                        </div>
-
-                        <!-- seconda parte: bottoni -->
-                        <div class = "col-4">
-
-                            <!-- se non funziona la divisione vediamo insieme -->
-                            <div class = "row">
-                                
-                                <div class = "col-12">
-                                    <!-- primo bottone -->
-                                </div>
-
-                                <div class = "col-12">
-                                    <!-- secondo bottone -->
-                                </div>
-
-                                <div class = "col-12">
-                                    <!-- terzo bottone -->
-                                </div>
-
-                            </div>
+                        <div class="col-12">
+                            <a href="HomePageUtenteLoggato.html" class="btn btn-outline-dark" style="margin-top:-20px;">
+                                <i class="fas fa-chevron-left"></i>
+                                Home page
+                            </a>
                         </div>
                     </div>
+                    <div class ="row mt-4">
+                        <div class = "col-12 col-lg-7 ">
+                            <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+                                <div class="wrapper wrapper--w680">
+                                    <div class="card card-4">
+                                        <div class="card-body">
+                                            <h3 class="title text-center mb-4">Aggiungi Animale</h3>
+                                            <form method="POST">
+                                                <div class="row row-space">
+                                                    <div class="col-6">
+                                                        <div class="input-group">
+                                                            <label class="label">Codice Identificativo</label>
+                                                            <input class="input--style-4" type="text" name="first_name" placeholder="inserire codice animale">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="input-group">
+                                                            <label class="label mr-4">Sesso</label>
+                                                            <div class="p-t-10">
+                                                                <label class="radio-container m-r-45">M
+                                                                    <input type="radio" checked="checked" name="gender">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                                <label class="radio-container">F
+                                                                    <input type="radio" name="gender">
+                                                                    <span class="checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="input-group">
+                                                            <label class="label">Categoria</label>
+                                                                <div class="rs-select2 js-select-simple select--no-search">
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <select name="subject">
+                                                                                <option disabled="disabled" selected="selected">Scegli una categoria</option>
+                                                                                <option value="Value 2">Galline</option>
+                                                                                <option value="Value 3">Mucche</option>
+                                                                                <option value="Value 4">Pecore</option>
+                                                                                <option value="Value 5">Suini</option>
+                                                                            </select>
+                                                                        <div class="select-dropdown"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row row-space">
+                                                    <div class="col-4 mr-4">
+                                                        <div class="input-group">
+                                                            <label class="label">Peso</label>
+                                                            <input class="input--style-4" type="text" name="last_name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <div class="input-group">
+                                                            <label class="label">Nascita</label>
+                                                            <div class="input-group-icon">
+                                                                <div  class="input--style-4">
+                                                                    <input type="date" id="datepicker" name='from' size='9' value="" style="height:25px;margin-top:20px;"/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row row-space">
+                                                    <div class="col-2">
+                                                        <div class="input-group">
+                                                            <label class="label">Cibo</label>
+                                                            <input class="input--style-4" type="email" name="email">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <div class="input-group">
+                                                            <label class="label">Quantità cibo</label>
+                                                            <input class="input--style-4" type="text" name="phone">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class = "col-12 mt-3 col-lg-2 mt-lg-1">
+                            <div class="row" style="margin-top: 160px">
+                                <div class = "col-6 col-lg-12">
+                                    <button type="button" class="btn btn-success mb-4 justify-content-center">Aggiungi animale</button>
+                                </div>
+                                <div class="col-6 col-lg-12">
+                                    <button type="button" class="btn btn-danger pl-2 pr-1">Annulla operazione</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    
+                    
                 </div>
-                <!-- fine contenuto pagina-->
+                   
+            </div>
+            <!-- fine contenuto pagina-->
 
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <!-- jQuery Custom Scroller CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -170,7 +247,20 @@
                 $('.collapse.in').toggleClass('in');
                 $('a[aria-expanded=true]').attr('aria-expanded', 'false');
             });
-        });
+
+            $(function() {
+                $("#datepicker").datepicker();
+                $("#icon").click(function() {
+                $("#datepicker").datepicker("show");
+                })
+            });
+
+             $("#badd").click(function(){
+            alert("Aggiunta avvenuta con successo");
+            });  
+     });  
     </script>
+
+    
     </body>
     </html>
