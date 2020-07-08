@@ -440,3 +440,21 @@ bottoni esterni
 #contentMex{
   display: none;
 }
+
+/*Avviso errore*/
+#mexErr{
+  text-align: center;
+  display: none;
+}
+
+#contentMexErr{
+  display: none;
+}
+
+#errorA{
+  display: none;
+}
+
+#errorR{
+  display: none;
+}

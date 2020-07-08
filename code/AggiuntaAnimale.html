@@ -135,6 +135,13 @@
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
+
+                                        <div id="contentMexErr" class="alert alert-danger alert-dismissible fade show" role="alert">
+                                            <div id="mexErr" class="alert-heading"><strong>ATTENZIONE!</strong> Compilare tutti i campi per poter procedere all'inserimento!</div>
+                                            <button type="button" id="buttonCloseErr" class="close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
                                             
                                         <div class="row">
                                             <div class="col-12">
@@ -168,7 +175,7 @@
                                             <div class="col-6">
                                                 <div class="input-group">
                                                     <label class="label">Peso</label>
-                                                    <input id="peso" class="border border-dark input--style-4" type="email" placeholder="Inserire peso animale">
+                                                    <input id="peso" class="border border-dark input--style-4" min="1" type="number" placeholder="Inserire peso animale">
                                                 </div>
                                             </div>
 
@@ -211,8 +218,8 @@
                                             </div>
                                             <div class="col-6">
                                                 <div class="input-group">
-                                                    <label class="label">Quantità cibo</label>
-                                                    <input id="quantitàCibo" class="border border-dark input--style-4" type="email" name="text" placeholder="Inserire quantità cibo">
+                                                    <label class="label">Quantità cibo giornaliero</label>
+                                                    <input id="quantitàCibo" class="border border-dark input--style-4" min="0" type="number" name="text" placeholder="Inserire quantità cibo">
                                                 </div>
                                             </div>
                                         </div>
@@ -273,17 +280,36 @@
             });
     
             $("#buttAdd").click(function(){
-                $("#mex").css("display", "block");
-                $("#contentMex").css("display", "block");
+                var id = $("#ident").val();
+                var categoria = $("#cat").val();
+                var peso = $("#peso").val();
+                var data = $("#datepicker").val();
+                var sessoM = $("#maschio").val();
+                var sessoF = $("#femmina").val();
+                var cibo = $("#cibo").val();
+                var quantitàCibo = $("quantitàCibo").val();
+                console.log(id);
 
-                $("#ident").val(" ");
-                $("#cat").val("Scegli una categoria");
-                $("#peso").val(" ");
-                $("#datepicker").val("gg/mm/aaaa");
-                $("#maschio").prop("checked", true);
-                $("#femmina").prop("checked", false);
-                $("#cibo").val(" ");
-                $("#quantitàCibo").val(" ");
+                if(id == '' || categoria == '' || peso == '' || data == '' || sessoM == '' || sessoF == '' || cibo == '' ||  quantitàCibo == ''){
+                    $("#mex").css("display", "none");
+                    $("#contentMex").css("display", "none");
+                    $("#mexErr").css("display", "block");
+                    $("#contentMexErr").css("display", "block");
+                } else{
+                    $("#mex").css("display", "block");
+                    $("#contentMex").css("display", "block");
+                    $("#mexErr").css("display", "none");
+                    $("#contentMexErr").css("display", "none");
+
+                    $("#ident").val(" ");
+                    $("#cat").val("Scegli una categoria");
+                    $("#peso").val("Inserire peso animale");
+                    $("#datepicker").val("gg/mm/aaaa");
+                    $("#maschio").prop("checked", true);
+                    $("#femmina").prop("checked", false);
+                    $("#cibo").val(" ");
+                    $("#quantitàCibo").val("Inserire quantità cibo");
+                }
             });
 
             $("#buttonClose").click(function(){
@@ -291,16 +317,20 @@
                 $("#contentMex").css("display", "none");
             });
 
+            $("#buttonCloseErr").click(function(){
+                $("#mexErr").css("display", "none");
+                $("#contentMexErr").css("display", "none");
+            });
+
             $("#buttReset").click(function(){
                 $("#ident").val(" ");
                 $("#cat").val("Scegli una categoria");
-                $("#peso").val(" ");
+                $("#peso").val("Inserire peso animale");
                 $("#datepicker").val("gg/mm/aaaa");
                 $("#maschio").prop("checked", true);
                 $("#femmina").prop("checked", false);
                 $("#cibo").val(" ");
-                $("#quantitàCibo").val(" ");
-
+                $("#quantitàCibo").val("Inserire quantità cibo");
             });
         });  
     </script>
